@@ -1,0 +1,15 @@
+deployment:
+  replicas: 1
+  namespace: sangwoo-otel-poc
+  name: fastapi-server-2-dep
+  port: 8000
+pod:
+  name: fastapi-server-2-pod
+image:
+  repository: spaceonedev/fastapi-server-2
+  pullPolicy: IfNotPresent
+service:
+  name: fastapi-server-2-svc
+  namespace: sangwoo-otel-poc
+  port: 8000
+  type: NodePort
