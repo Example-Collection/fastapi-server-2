@@ -7,7 +7,7 @@ build:
   tagPolicy:
     sha256: {}
   artifacts:
-  - image: spaceonedev/fastapi-server-2
+  - image: robbyra98/fastapi-server-2
     docker:
       dockerfile: Dockerfile
 deploy:
